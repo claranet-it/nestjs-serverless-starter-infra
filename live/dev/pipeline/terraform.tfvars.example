@@ -1,0 +1,20 @@
+app_name     = "tester"
+app_short    = "tst"
+stage        = "dev"
+
+aws_params = {
+  region  = "eu-west-1"  
+}
+
+github_repository = {
+  "name"   = "my/repo"
+  "branch" = "main"
+}
+
+build_template  = "./resources/buildspec.yml"
+test_template   = "./resources/testspec.yml"
+
+tags = {
+  Owner   = "owner"
+  Destroy = "false"
+}
