@@ -17,7 +17,7 @@ phases:
       - echo "### Installing nest..."
       - npm install -g @nestjs/cli
       - echo "### Installing dependencies..."
-      - pnpm install --only=prod
+      - pnpm install
       - echo "### Compile typescript..."
       - pnpm run build
   pre_build:
