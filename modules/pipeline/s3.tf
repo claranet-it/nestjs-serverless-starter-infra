@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "codepipeline_bucket" {
-  bucket = local.pipeline_name
+  bucket_prefix = local.pipeline_name
 
   tags = var.tags
 }
